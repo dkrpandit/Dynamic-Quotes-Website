@@ -23,11 +23,5 @@ const tweet = () => {
     const url = `https://twitter.com/intent/tweet?text=${encodeURIComponent(quotesText)}%0A${encodeURIComponent(authorText)}`;
     window.open(url);
 }
-const shareOnFacebook = () => {
-    const quotesText = quotes.innerText;
-    const authorText = author.innerText;
-    const url = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(window.location.href)}&quote=${encodeURIComponent(quotesText)} - ${encodeURIComponent(authorText)}`;
-    window.open(url, 'Facebook Share', 'width=600,height=400');
-  }
   
 getQuote()
