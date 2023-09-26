@@ -23,4 +23,4 @@ const tweet = () => {
     const url = `https://twitter.com/intent/tweet?text=${encodeURIComponent(quotesText)}%0A${encodeURIComponent(authorText)}`;
     window.open(url);
 }
-// getQuote()
+getQuote()
