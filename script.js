@@ -7,11 +7,11 @@ const getQuote = async () => {
         const quotesData = await data.json()
         // console.log(quotesData);
         // console.log(quotesData.content);
-        // console.log(quotesData.authorSlug);
+        // console.log(quotesData.author);
         // document.getElementById("quotes").innerText = quotesData.content;
         quotes.innerText = quotesData.content;
         // document.getElementById("author").innerHTML = `Author- ${quotesData.authorSlug}`;
-        author.innerHTML = `Author- ${quotesData.authorSlug}`;
+        author.innerHTML = `Author- ${quotesData.author}`;
     } catch (error) {
 
     }
